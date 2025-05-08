@@ -11,18 +11,33 @@ footer{
     background-color: black;
     color: white;
     font-family: sans-serif;
+    text-align: left;
 }
 
 .top{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 30px;
+}
+
+@media (max-width: 440px){
+    .top{
+        gap: 10px;
+    }
 }
 
 .bottom{
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+@media (max-width: 440px){
+    .bottom{
+        margin-top: 60px;
+    }
 }
 
 .top-line{
@@ -32,16 +47,16 @@ footer{
 .top-content{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
 }
 
 .box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 25px;
     width: 170px;
 }
 
@@ -50,16 +65,29 @@ footer{
     gap: 30px;
 }
 
-.box1-title{
-    font-weight: 800;
-    font-size: 30px;
-    background: linear-gradient(45deg, #ff2dce, #0051ff);
+.box1-span-title{
+    font-weight: 700;
+    font-size: 45px;
+    background: linear-gradient(90deg, #DA78C0 0%, #559CFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 440px){
+    .box1-span-title{
+        font-size: 30px;
+    }
+}
+
 .box1-content{
     font-size: 18px;
+    font-weight: 300;
+}
+
+@media (max-width: 440px){
+    .box1-content{
+        font-size: 12px;
+    }
 }
 
 .box1-end{
@@ -68,14 +96,21 @@ footer{
     gap: 40px;
 }
 
+@media (max-width: 440px){
+    .box1-end{
+        justify-content: center;
+    }
+}
+
 .instagram-icon{
-    background: linear-gradient(45deg, #fccc63, #e1306c, #833ab4);
+    background: linear-gradient(180deg, #D62976 0%, #962FBF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .box4-content{
     flex-wrap: wrap;
+    height: 180px;
 }
 
 .box25-title{
@@ -89,8 +124,7 @@ footer{
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 150px;
-    gap: 15px;
+    gap: 20px;
 }
 
 .box a{
@@ -103,5 +137,5 @@ footer{
 
 .bottom-content{
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
 }
